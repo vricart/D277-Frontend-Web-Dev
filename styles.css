@@ -1,0 +1,490 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&display=swap');
+
+
+/* Colors */
+:root {
+  --color-primary: #046B99;
+  --color-highlight: #FDB81E;
+  --color-secondary: #eef8fb;
+  --color-standout: #323A45;
+}
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
+  line-height: 1.5;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+  height: 100%;
+  width: 450px;
+  background-color: var(--color-primary);
+}
+
+.logo-container img {
+  height: 50px;
+}
+
+.logo-text h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+/* Navigation Bar */
+.nav-container {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: var(--color-secondary);
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--color-highlight);
+}
+
+/* Main Content */
+main {
+  padding-top: 120px;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: auto; 
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero-section img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40%;
+  right: 0%;
+  height: 500px;
+  width: 800px;
+  background-color: var(--color-secondary);
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  text-align: left;
+}
+
+.text-box p:first-of-type {
+  color: var(--color-highlight);
+  font-weight: bold;
+}
+
+.text-box h1 {
+  font-size: 4rem;
+  line-height: 1.25;
+  color: var(--color-standout);
+  margin-bottom: 1rem;
+}
+
+.text-box p {
+  font-size: 1rem;
+  color: var(--color-standout);
+  line-height: 1.5;
+}
+
+
+/* Articles - Cities */
+.articles-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 0 8rem;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.article-card {
+  padding: 2rem;
+  border-radius: 0;
+  text-align: center;
+  color: white;
+  height: 250px;
+}
+
+.icon-container {
+  margin-bottom: 0.5rem;
+}
+
+.icon-container img {
+  height: 50px;
+  width: 50px;
+}
+
+.article-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.article-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.article-link {
+  text-decoration: none;
+}
+
+.article-link:hover .article-card {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-1 {
+  background-color: #D9B295;
+}
+
+.card-2 {
+  background-color: #7bb0da;
+}
+
+.card-3 {
+  background-color: var(--color-highlight);
+}
+
+.card-4 {
+  background-color: #577786;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-left: 8rem;
+  padding: 4rem;
+  height: 100vh;
+  background-color: var(--color-primary);
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.images-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.images-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.text-container {
+  flex: 1;
+  padding: 1rem;
+}
+
+.text-container h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  color: var(--color-highlight);
+}
+
+.text-container h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.text-container hr {
+  width: 50px;
+  height: 3px;
+  background-color: var(--color-highlight);
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.text-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 6rem;
+}
+
+/* Fun Facts Aside */
+.fun-facts {
+  position: absolute;
+  top: 95%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-secondary);
+  color: var(--color-standout);
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  z-index: 2;
+  text-align: center;
+}
+
+.fun-facts h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.fun-facts ol {
+  list-style: decimal inside;
+  padding: 0;
+  margin: 0;
+}
+
+.fun-facts li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  color: var(--color-standout);
+}
+
+/* Climate Section Styling */
+.climate-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background-color: white;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.climate-content {
+  max-width: 800px;
+  width: 100%;
+}
+
+.climate-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--color-standout);
+}
+
+.climate-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: var(--color-secondary);
+}
+
+.climate-table th, .climate-table td {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.climate-table th {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.climate-table th i {
+  margin-right: 1rem;
+  font-size: 1rem;
+  color: var(--color-highlight);
+}
+
+/* Footer Section */
+.footer-section {
+  height: 10vh;
+  background-color: var(--color-primary);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--color-highlight);
+  transform: scale(1.2);
+}
+
+.rights-reserved {
+  text-decoration: none;
+  color: var(--color-highlight);
+}
+
+.rights-reserved:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+/* Floated Image */
+.float-img {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin: 0 1rem 1rem 0;
+}
+
+/* Contact Page */
+.contact-section {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 2rem;
+  background-color: var(--color-secondary);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  gap: 4rem;
+}
+
+.contact-section > div {
+  flex: 1;
+}
+
+.contact-section div:first-child {
+  text-align: left;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-section label {
+  font-weight: bold;
+  text-align: left;
+  color: var(--color-standout);
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-section button {
+  padding: 0.75rem;
+  background-color: var(--color-highlight);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+  background-color: #e0a700;
+}
+
+#i-like-visiting-here {
+  color: var(--color-highlight);
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>State of California</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo-container">
+        <a href="https://www.ca.gov/" target="_blank">
+          <img src="src/CAgov-logo.png" alt="California Logo" />
+        </a>
+        <a href="index.html" class="logo-text">
+          <h1>Welcome to California</h1>
+        </a>
+      </div>
+    </header>
+    <!-- Nav -->
+    <nav class="nav-container">
+      <ul class="nav-links">
+        <li><a href="index.html">California</a></li>
+        <li><a href="sacramento.html">Sacramento</a></li>
+        <li><a href="sanFrancisco.html">San Francisco</a></li>
+        <li><a href="losAngeles.html">Los Angeles</a></li>
+        <li><a href="sanDiego.html">San Diego</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <img src="src/ca-background-img.png" alt="California Beach Image" />
+        <div class="text-box">
+          <p>Embrace the extraordinary.</p>
+          <h1>Together for a Thriving California</h1>
+          <p>
+            Uncover the wonders of California. From stunning coastlines to
+            vibrant cities, discover a state rich in diversity, innovation, and
+            natural beauty.
+          </p>
+        </div>
+      </section>
+      <!-- Articles Cities Section -->
+      <section class="articles-section">
+        <!-- City 1 -->
+        <a href="sacramento.html" class="article-link">
+          <article class="article-card card-1">
+            <div class="icon-container">
+              <img src="src/government.png" alt="Government Icon" />
+            </div>
+            <h3>Sacramento</h3>
+            <p>California's vibrant capital city.</p>
+          </article>
+        </a>
+        <!-- City 2 -->
+        <a href="sacramento.html" class="article-link">
+          <article class="article-card card-2">
+            <div class="icon-container">
+              <img src="src/golden-gate.png" alt="Golden Gate Icon" />
+            </div>
+            <h3>San Francisco</h3>
+            <p>Home to iconic bridges and steep streets.</p>
+          </article>
+        </a>
+        <!-- City 3 -->
+        <a href="sacramento.html" class="article-link">
+          <article class="article-card card-3">
+            <div class="icon-container">
+              <img src="src/hollywood.png" alt="Hollywood Icon" />
+            </div>
+            <h3>Los Angeles</h3>
+            <p>Entertainment capital brimming with stars.</p>
+          </article>
+        </a>
+        <!-- City 4 -->
+        <a href="sacramento.html" class="article-link">
+          <article class="article-card card-4">
+            <div class="icon-container">
+              <img src="src/road-trip.png" alt="Road Trip Icon" />
+            </div>
+            <h3>San Diego</h3>
+            <p>Sunny beaches and vibrant neighborhoods await.</p>
+          </article>
+        </a>
+      </section>
+      <!-- About Section -->
+      <section class="about-section">
+        <div class="images-container">
+          <img
+            src="src/joshua-tree.png"
+            alt="Mayor's Office"
+            class="image-left"
+          />
+          <img
+            src="src/golden-gate-bridge.png"
+            alt="Town Street"
+            class="image-right"
+          />
+        </div>
+        <div class="text-container">
+          <h4>The Golden State</h4>
+          <h2>California</h2>
+          <hr />
+          <p>
+            is a state in the Western Region of the United States that lies on
+            the Pacific Coast. It borders Oregon to the north, Nevada and
+            Arizona to the east, and shares an international border with the
+            Mexican state of Baja California to the south. With over 39 million
+            residents across an area of 163,696 square miles, it is the most
+            populous U.S. state, the third-largest by area, and most populated
+            subnational entity in North America.
+          </p>
+        </div>
+        <aside class="fun-facts">
+          <h3>Top 5 Attractions in California</h3>
+          <ol>
+            <li>Alcatraz Island</li>
+            <li id="i-like-visiting-here">Universal Studios Hollywood</li>
+            <li>Giffith Observatory</li>
+            <li>San Diego Zoo</li>
+            <li>La Jolla Cove</li>
+          </ol>
+        </aside>
+      </section>
+      <!-- Climate Overview Section -->
+      <section class="climate-section">
+        <div class="climate-content">
+          <h2>Climate Overview of California Cities</h2>
+          <table class="climate-table">
+            <thead>
+              <tr>
+                <th><i class="fas fa-city"></i> City</th>
+                <th>
+                  <i class="fas fa-temperature-high"></i> Average High (&deg;F)
+                </th>
+                <th>
+                  <i class="fas fa-temperature-low"></i> Average Low (&deg;F)
+                </th>
+                <th><i class="fas fa-cloud-rain"></i> Annual Rainfall (in)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sacramento</td>
+                <td>74</td>
+                <td>49</td>
+                <td>18.5</td>
+              </tr>
+              <tr>
+                <td>San Francisco</td>
+                <td>64</td>
+                <td>51</td>
+                <td>23.7</td>
+              </tr>
+              <tr>
+                <td>Los Angeles</td>
+                <td>75</td>
+                <td>57</td>
+                <td>14.8</td>
+              </tr>
+              <tr>
+                <td>San Diego</td>
+                <td>72</td>
+                <td>57</td>
+                <td>10.3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-section">
+      <div class="footer-content">
+        <p>
+          &copy; 2025 State of California.
+          <a href="docs/sources.txt" class="rights-reserved"
+            >All rights reserved.</a
+          >
+        </p>
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.twitter.com"
+            target="_blank"
+            aria-label="Twitter"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
